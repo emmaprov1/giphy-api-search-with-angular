@@ -1,0 +1,101 @@
+ <nav class="navbar navbar-light navbar-expand-md bg-white pb-0">
+      <div class="container">
+        <a class="navbar-brand d-none" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLink="/dashboard" routerLinkActive="active"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/server" routerLinkActive="active"><i class="fa fa-server" aria-hidden="true"></i> Server</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/application" routerLinkActive="active" tabindex="-1" aria-disabled="true"><img src="../../../assets/images/noun_application_967926.svg" class="nav-icon"/>  Application</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn nav-button mb-1" (click)="open(content)">Check Health Status</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+<ng-template #content let-modal>
+  <div class="modal-header border-0">
+    <h4 class="modal-title" id="modal-basic-title">Conduct Health Check</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-sm-3">
+          Applications
+        </div>
+        <div class="col-sm-6">
+          <div>
+            <input type="checkbox"> All Applications
+          </div>
+
+
+          <div class=" pt-4">
+            Select Application
+            <div class=" pt-2">
+              <select multiple class="form-control select-checkbox" size="5">
+                <option>Application 1</option>
+                <option>Application 2</option>
+                <option>Application 3</option>
+                <option>Application 4</option>
+                <option>Application 5</option> 
+              </select>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm-3">
+        </div>
+      </div>
+
+      <div class="row pt-5">
+        <div class="col-sm-3">
+          Server
+        </div>
+        <div class="col-sm-6">
+          <div>
+          <input type="checkbox"> All Server
+          </div>
+
+
+
+          <div class=" pt-3">
+            Select Application
+            <div class=" pt-2">
+              <select multiple class="form-control select-checkbox" size="5">
+                <option>Server 1</option>
+                <option>Server 2</option>
+                <option>Server 3</option>
+                <option>Server 4</option>
+                <option>Server 5</option> 
+              </select>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm-3">
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer border-0">
+    <button type="button" class="btn" (click)="modal.close('Save click')">Cancel</button>
+    <button type="button" class="btn button-form" (click)="modal.close('Save click')">Check Health Status</button>
+  </div>
+</ng-template>
+

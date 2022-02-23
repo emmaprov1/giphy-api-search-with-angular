@@ -1,0 +1,44 @@
+<div class="search mt-5">
+  <div class="row h-100">
+    <div class="col-md-6 my-auto offset-md-3">
+        <div class="card w-100 shadow-md">
+            <div class="card-body"> 
+            <form name="serachForm">
+            <h2>{{title}}</h2>
+                <div class="form-group pb-3"> 
+                  <input class="form-control" type="text" placeholder="Start Your Search e.g Car" [(ngModel)]="text" [ngModelOptions]="{standalone: true}">
+                </div> 
+                  <button *ngIf="!loading" class="btn btn-primary btn-md w-100" (click)="searchText()"> Search </button>  
+                   <button  *ngIf="loading" class="btn btn-danger btn-md w-100" disabled="true">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Searching...
+                  </button>  
+                  </form>
+            </div> 
+            <div class="container"> 
+              <div class="row">
+                <div class="col-4 p-0" *ngFor="let result of myResults | async"> 
+                  <img [defaultImage]="defaultImage" [lazyLoad]="result.images.fixed_width.url" class="w-100 searchImg" (click)="goNext(result)"> 
+                </div> 
+              </div>
+
+              <div class="row" *ngIf="loading">
+                <div class="col-4" *ngFor="let results of number">
+                  <ngx-skeleton-loader 
+                    count="1" 
+                    appearance="line" 
+                    animation="progress" 
+                    [theme]="{ 
+                      height: '200px',
+                      width: '100',
+                      'border-radius': 0
+                    }"
+                  >
+                  </ngx-skeleton-loader> 
+                </div>  
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

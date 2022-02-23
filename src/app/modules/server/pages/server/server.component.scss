@@ -1,0 +1,178 @@
+.dashboard{ 
+  background-color: #F1F3F5; 
+  padding-bottom:30px;
+  .dashboard-main{
+    background-color: white;
+    .table-border{
+      border: 1px solid #D3D3D3 !important;
+    }
+     table{
+      color: #000b14b6;
+      font-size: .8rem;
+        .button{
+          background: #49D3FF 0% 0% no-repeat padding-box;
+          box-shadow: 0px 1px 1px #00000029;
+          border-radius: 4px;
+          opacity: 1;
+          font-size: .7rem;
+          text-align: center;
+          letter-spacing: 0px;
+          color: #1B1464;
+          opacity: 1;
+          width: 63px;
+          height: 28px;
+          /* UI Properties */
+          background: #49D3FF 0% 0% no-repeat padding-box;
+          box-shadow: 0px 1px 2px #00000029;
+          border-radius: 4px;
+          opacity: 1;
+        }
+
+        td{
+          text-align:center;
+          .bg-success{
+            background: #14DB77 0% 0% no-repeat padding-box !important;
+            border: 1px solid #24C977 !important;
+            opacity: 1;
+            padding: 1px;
+          }
+        }
+          th{
+          text-align:center;
+            .bg-success{
+              background-color: #14DB77!important;
+              color: #14DB77!important;
+              opacity: 1;
+              padding:.2px;
+            }
+            .bg-danger{
+              background-color: #FF4343F7!important;
+              color: #FF4343F7!important;
+              opacity: 1;
+              padding:.2px;
+            }
+        }
+     }
+    .thead-lighter{/* Layout Properties */
+      top: 659px;
+      left: 136px;
+      width: 1648px;
+      height: 47px;
+      /* UI Properties */
+      background: #F3F3F7 0% 0% no-repeat padding-box;
+      border: 1px solid #B3B3B480;
+      opacity: 0.91;
+      text-align: left;
+      font-size: .8rem;
+      letter-spacing: 0px;
+      color: #000b14b6;
+      opacity: 1;
+    }
+
+    .table-state{
+      width:13px;
+      height:13px;
+      background-color: yellow;
+    }
+    .table > :not(:first-child) {
+       border-top: 0px solid currentColor !important;
+    }
+  }
+
+.paginations{
+  padding-top: 100px;
+  padding-bottom: 20px;
+        .bg-success1{
+          background: #49D3FF;
+        }
+        .page-link{
+          font-size: .7rem;
+          color: rgb(92, 90, 90)
+        }
+    }
+
+    .search{
+      position: relative;
+      padding:0;
+       margin:0;
+       font-size: .8rem;
+       .input {
+         height:30px;
+         margin:0;
+         padding-left: 30px;
+         background-color: rgb(238, 237, 237);
+        border: 1px solid rgb(238, 237, 237);}
+
+        .fa-search{
+          position: absolute;
+          bottom:8px;
+          left:10px;
+          font-size: .8rem;
+        }
+        select{
+          padding-left: 20px;
+
+        }
+    }
+    .select-dropdown{
+      select{
+        width: 100%;
+        height: 30px;
+        /* UI Properties */
+        background: #FFFFFF;
+        color:rgb(129, 129, 129);
+        border: 0.6px solid rgb(185, 184, 184);
+        border-radius: 10px;
+        font-size: .8rem;
+      }
+
+    }
+    .file-icon{
+      width: 18px;
+      height:18px;
+    }
+    .result{
+      padding-right: 20px;
+      font-size: .8rem;
+      .text{
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .button{
+    background: #49D3FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 1px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+    font-size: .9rem;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #1B1464;
+    opacity: 1;
+    width: 123px;
+    height: 38px;
+    /* UI Properties */
+    background: #49D3FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 2px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+  }
+
+  @media (min-width: 568px) { 
+       .dashboard-main{
+          padding: 30px 40px; 
+        }
+        .search-con{ 
+         padding-left:10px !important; 
+        }
+    }
+
+  @media (max-width: 568px) { 
+       .p--4{ 
+         padding:20px !important; 
+        }
+        .m--4{ 
+         margin:10px !important; 
+        }
+    }

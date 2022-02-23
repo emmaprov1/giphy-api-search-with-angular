@@ -1,0 +1,98 @@
+nav{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 2px #4D4C4C29;
+  border-radius: 4px;
+  opacity: 1;
+
+  .nav-button{
+    width: 202px;
+    height: 40px;
+    /* UI Properties */
+    background: #49D3FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 1px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+    font-size: .9rem;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #1B1464;
+    opacity: 1;
+  }
+
+  .nav-icon{
+    width:15px
+  }
+  .nav-item{
+    margin-right:45px !important
+  }
+  @media only screen and (max-width: 600px) {
+    .nav-item{
+      margin-right:100px !important
+    }
+  }
+
+  .nav-item{
+    .active{
+      border-bottom: 3px solid #49D3FF;
+
+    }
+  }
+
+}
+
+.selectapp{
+  height: 220px;
+  border: 1px solid grey
+}
+
+
+.select-checkbox option::before {
+  content: "\2610";
+  width: 2em;
+  text-align: center;
+  display: inline-block;
+}
+.select-checkbox option:checked::before {
+  content: "\2611";
+}
+
+.select-checkbox-fa option::before {
+  font-family: FontAwesome;
+  content: "\f096";
+  width: 2em;
+  display: inline-block;
+  margin-left: 2px;
+}
+.select-checkbox-fa option:checked::before {
+  content: "\f046";
+}
+
+.button-form{
+  width: 202px;
+  height: 40px;
+  /* UI Properties */
+  background: #49D3FF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 1px #00000029;
+  border-radius: 4px;
+  opacity: 1;
+  font-size: .9rem;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #1B1464;
+  opacity: 1;
+}
+
+.navbar-nav .nav-link {
+    padding-bottom: 20px !important;
+}
+.navbar-nav .nav-link.active{
+  border-bottom: 6px solid #49D3FF !important;
+}
+    
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.55);
+    border-color: rgba(0, 0, 0, 0.1);
+    padding: 0px !important;
+    margin-bottom: 10px !important;
+}

@@ -1,0 +1,25 @@
+ <div class="search mt-5 my-5">
+  <div class="row h-100">
+    <div class="col-md-6 my-auto offset-md-3">
+        <div class="card w-100 shadow-md"> 
+            <div class="container"> 
+              <div class="row">
+                <div class="col-12 p-0">
+                    <a [routerLink]="['/search']"><button class="btn btn-primary my-5">Search Again</button></a>
+                    <img [defaultImage]="defaultImage" [lazyLoad]="dataCog?.images.fixed_width.url" class="w-100 mainImg"/> 
+                    <ul class="list-group">
+                        <li class="list-group-item">Title: {{dataCog?.title}}</li> 
+                        <li class="list-group-item">Rating: {{dataCog?.rating}}</li> 
+                        <li class="list-group-item">Type: {{dataCog?.type}}</li> 
+                        <li class="list-group-item">Posted By: {{dataCog?.username}}</li> 
+                        <li class="list-group-item">Avatar: <img [defaultImage]="defaultImage" [lazyLoad]="dataCog?.user.avatar_url" class="rounded-circle" style="width:50px"></li> 
+                        <li class="list-group-item">Display Name: {{dataCog?.user.display_name}}</li> 
+                        <li class="list-group-item">Website Url: {{dataCog?.user.website_url}}</li> 
+                    </ul>
+                </div> 
+              </div> 
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

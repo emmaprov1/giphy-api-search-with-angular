@@ -1,0 +1,206 @@
+<div class="dashboard">
+
+<app-header></app-header>
+
+<div class="container">
+
+  <div class="container p-0 mt-5 pb-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-2">
+         <app-application-status></app-application-status>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-2">
+         <app-server-status></app-server-status>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-2">
+        <app-health-check></app-health-check>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-main">
+      <div class="container p--4 pb-4">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-1 p-1 search-con">
+            <div class="search">
+            <input type="text" class="w-100 input" placeholder="Enter a search keyword">
+            <span class="fa fa-search"></span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2  mb-1 p-1">
+            <div class="select-dropdown">
+              <select class="rounded-0">
+                <option value="Option 1">First Option</option>
+                <option value="Option 2">2nd Option</option>
+                <option value="Option 3">Option Number 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2  mb-1 p-1">
+            <div class="select-dropdown">
+              <select class="rounded-0">
+                <option value="Option 1">First Option</option>
+                <option value="Option 2">2nd Option</option>
+                <option value="Option 3">Option Number 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2  mb-1 p-1">
+            <div class="select-dropdown">
+              <select class="rounded-0">
+                <option value="Option 1">First Option</option>
+                <option value="Option 2">2nd Option</option>
+                <option value="Option 3">Option Number 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-border m--4">
+          <div class="w-100 py-3">
+            <div class="text-end w-100 padding-end result">
+              <img src="../../../../../assets/images/PDF.svg" class="file-icon">
+              <img src="../../../../../assets/images/xls.svg" class="file-icon">
+              <span class="text">Showing 10 of 5000 Entries</span>
+            </div>
+          </div>
+          <div class="table-responsive">
+          <table class="table">
+          <thead class="thead-lighter">
+            <tr>
+              <th style="min-width:106px">SN</th>
+              <th style="min-width:186px">Application</th>
+              <th style="min-width:186px">Server mapped</th>
+              <th style="min-width:186px">Last Time Date</th>
+              <th style="min-width:186px">Status</th>
+              <th style="min-width:186px">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 <span class="fa fa-checks bg-success text-success rounded-circle ml-0 my-0 m-3 p-1" aria-hidden="true"></span></td>
+              <td>Application name goes here</td>
+              <td  class="text-primary">3 Servers</td>
+              <td>11/12/20 3: 57:29 PM</td>
+              <td><span class="fa fa-check bg-success rounded-circle" aria-hidden="true"></span> Healthy</td>
+              <td class="">
+                <button class="btn button mr-5"  (click)="open(content)">View Result</button>
+                <span class="fa fa-ellipsis-v my-0 py-0 mx-4" aria-hidden="true"></span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1 <span class="fa fa-checks bg-success text-success rounded-circle ml-0 my-0 m-3 p-1" aria-hidden="true"></span></th>
+              <td>Application name goes here</td>
+              <td  class="text-primary">3 Servers</td>
+              <td>11/12/20 3: 57:29 PM</td>
+              <td><span class="fa fa-check bg-success rounded-circle" aria-hidden="true"></span></td>
+              <td class="">
+                <button class="btn button mr-5">View Result</button>
+                <span class="fa fa-ellipsis-v my-0 py-0 mx-4" aria-hidden="true"></span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1 <span class="fa fa-checks bg-success text-success rounded-circle ml-0 my-0 m-3 p-1" aria-hidden="true"></span></th>
+              <td>Application name goes here</td>
+              <td class="text-primary">3 Servers</td>
+              <td>11/12/20 3: 57:29 PM</td>
+              <td><span class="fa fa-check bg-success rounded-circle" aria-hidden="true"></span></td>
+              <td class="">
+                <button class="btn button mr-5">View Result</button>
+                <span class="fa fa-ellipsis-v my-0 py-0 mx-4" aria-hidden="true"></span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1 <span class="fa fa-checks bg-success text-success rounded-circle ml-0 my-0 m-3 p-1" aria-hidden="true"></span></th>
+              <td>Application name goes here</td>
+              <td  class="text-primary">3 Servers</td>
+              <td>11/12/20 3: 57:29 PM</td>
+              <td><span class="fa fa-warning text-warning rounded-circle" aria-hidden="true"></span></td>
+              <td class="">
+                <button class="btn button mr-5">View Result</button>
+                <span class="fa fa-ellipsis-v my-0 py-0 mx-4" aria-hidden="true"></span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1 <span class="fa fa-checks p-1 bg-danger rounded-circle ml-0 my-0 m-3" aria-hidden="true"></span></th>
+              <td>Application name goes here</td>
+              <td  class="text-primary">3 Servers</td>
+              <td>11/12/20 3: 57:29 PM</td>
+              <td><span class="fa fa-check bg-success rounded-circle" aria-hidden="true"></span> </td>
+              <td class="">
+                <button class="btn button mr-5">View Result</button>
+                <span class="fa fa-ellipsis-v my-0 py-0 mx-4" aria-hidden="true"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+        <div class="paginations m--4">
+          <nav aria-label="Page navigation mt-4 m--4">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link border-0" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link bg-success1 rounded-circle" href="#">1</a></li>
+            <li class="page-item"><a class="page-link border-0" href="#">2</a></li>
+            <li class="page-item"><a class="page-link border-0" href="#">3</a></li>
+            <li class="page-item"><a class="page-link border-0" href="#">4</a></li>
+            <li class="page-item"><a class="page-link border-0" href="#">...</a></li>
+            <li class="page-item"><a class="page-link border-0" href="#">1539</a></li>
+
+            <li class="page-item">
+              <a class="page-link border-0" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<ng-template #content let-modal>
+  <div class="modal-header border-0">
+    <h4 class="modal-title" id="modal-basic-title"> Health Check Status</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body h-100">
+    <div class="result-modal">
+      <div class="container p-5">
+        <div class="row h-100">
+          <div class="col-sm-6 my-auto offset-md-3 mb-5">
+            <div class=" pt-2 pb-5  shadow--md p-5">
+              <div class="pt-1">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">App Name <span class="fa fa-check p--1 bg-success rounded-circle text-success"></span></li>
+                  <li class="list-group-item">End Point</li>
+                  <li class="list-group-item"><img src="../../../../../assets/images/arrow.svg" style="width:10px; transform: rotate(-180deg)" class="pr-4"> Server 1 <span class="fa fa-check p--1 bg-success rounded-circle text-success"></span></li>
+                  <li class="list-group-item"><img src="../../../../../assets/images/arrow.svg" style="width:10px; transform: rotate(-180deg)" class="pr-4"> Server 2 <span class="fa fa-times p--1 text-danger"></span></li>
+                  <li class="list-group-item"><img src="../../../../../assets/images/arrow.svg" style="width:10px; transform: rotate(-180deg)" class="pr-4">  Server 3 <span class="fa fa-check p--1"></span></li>
+                  <li class="list-group-item"><img src="../../../../../assets/images/arrow.svg" style="width:10px; transform: rotate(-180deg)" class="pr-4">  Server 4 <span class="fa fa-check p--1"></span></li>
+                </ul>
+             </div>
+          </div>
+          <div class="pt-4 text-end  text-primary">
+            <span class="fa fa-refresh text-primary"></span> Refresh
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer border-0 pt-5">
+    <button type="button" class="btn button-form" (click)="modal.close('Save click')">Cancel</button>
+  </div>
+</ng-template>
